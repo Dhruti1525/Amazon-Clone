@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-amz-dark: #131921;
+  --color-amz-blue: #232f3e;
+  --color-amz-light: #37475a;
+  --color-amz-yellow: #febd69;
+  --color-amz-orange: #f3a847;
+  --color-amz-bg: #eaeded;
+  --color-amz-link: #007185;
+  --color-amz-price: #b12704;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #0f1111;
+}
+
+/* Hide scrollbar for horizontal product rows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
